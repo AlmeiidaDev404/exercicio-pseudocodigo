@@ -1,0 +1,17 @@
+algoritmo "EconomizarParaCopa"
+
+var
+  valor: real
+  quantoFalta: real
+
+inicio
+   escreva("Qual o valor acumulado em conta?")
+   leia(valor)
+
+  se valor >= 25000 entao
+    escreva("Partiu América do Norte!!")
+  senao
+    quantoFalta <- 25000 - valor
+    escreva("Faltam R$: ", quantoFalta)
+  fimse
+fimalgoritmo
