@@ -1,0 +1,24 @@
+algoritmo "filtroDeCandidatoTec"
+
+var
+  idade: inteiro
+  numDeProjetos: inteiro
+
+inicio
+   escreva("Qual sua idade?")
+    leia(idade)
+
+  se idade <= 18 entao
+    escreva("Idade miníma não atingida para prosseguir no processo seletivo!")
+  senao
+    escreva("Quantos projetos você tem no GitHub?")
+    leia(numDeProjetos)
+
+  se numDeProjetos >= 5 entao
+    escreva("Candidato aprovado!")
+  senao
+     escreva("Candidato reprovado!!")
+    fimse
+  fimse
+
+fimalgoritmo
