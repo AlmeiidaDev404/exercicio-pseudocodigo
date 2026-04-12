@@ -1,0 +1,19 @@
+algoritmo "verificadorDeDividendos"
+
+var
+  valorDY: real
+
+inicio
+     escreva("Qual o valor do DY?")
+    leia(ValorDY)
+  se valorDY > 6 entao
+    escreva("Estratégia de Renda Passiva OK!")
+  senao se valorDY >= 4 e valorDY <= 6 entao
+    escreva("Rendimento Médio.")
+  senao se valorDY < 4 entao
+    escreva("Rendimento Baixo.")
+fimse
+fimse
+fimse
+
+fimalgoritmo
