@@ -1,0 +1,17 @@
+algoritmo "calculadoraDeImposto"
+
+var
+  valorProduto:real
+  valorImposto:real
+
+inicio
+  escreva("Qual o valor do produto importado?")
+  leia(valorProduto)
+  se valorProduto > 50 entao
+    valorImposto <- valorProduto * 0.60
+    escreva("Imposto no valor de $ "valorImposto:0:2)
+  senao
+    valorImposto <- valorProduto * 0.17
+    escreva("Imposto no valor de $ "valorImposto:0:2)
+  fimse
+fimalgoritmo
