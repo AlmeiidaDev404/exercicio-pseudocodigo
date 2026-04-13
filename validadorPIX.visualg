@@ -1,0 +1,25 @@
+algoritmo "validadorDePIX"
+
+var
+  valorPIX: real
+  valorSaldo: real
+  valorLimite: real
+
+inicio
+    escreva("Qual o valor da tranferência que deseja realizar?")
+    leia(valorPIX)
+    escreva("Qual o valor do seu saldo atual?")
+    leia(valorSaldo)
+  se valorSaldo >= valorPIX entao
+    escreva("transação realizada!")
+  senao
+    escreva("Qual o valor do seu cheque especial?")
+    leia (valorLimite)
+  se valorLimite + valorSaldo >= valorPIX entao
+    escreva("Transação via Cheque Especial.")
+   senao
+    escreva("Saldo Insuficiente.")
+
+    fimse
+  fimse
+fimalgoritmo
