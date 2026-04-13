@@ -1,0 +1,21 @@
+algoritmo "analiseDeCripoativos"
+
+var 
+ nomeCripo: caractere
+ percentual24h: real
+
+inicio
+    escreva("escreva o nome da criptomoeda.")
+    leia(nomeCripo)
+    escreva("Qual foi a variação percentual de " nomeCripo " nas últimas 24hs?")
+    leia(percentual24h)
+  se percentual24h > 0 e percentual24h >= 10 entao
+    escreva("Alta Relevante")
+  senao se percentual24h < 0 e percentual24h < -10 entao 
+    escreva("Correção Forte") 
+  senao
+    escreva("Estabilidade")
+
+  fimse
+ fimse
+fimalgoritmo
